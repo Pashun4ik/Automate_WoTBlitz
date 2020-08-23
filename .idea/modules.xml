@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../Tutorials/6-21-2020 OpenCV tutorial/.idea/6-21-2020 OpenCV.iml" filepath="$PROJECT_DIR$/../../Tutorials/6-21-2020 OpenCV tutorial/.idea/6-21-2020 OpenCV.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../6-22-2020 MyOpenCV/.idea/6-22-2020 MyOpenCV.iml" filepath="$PROJECT_DIR$/../6-22-2020 MyOpenCV/.idea/6-22-2020 MyOpenCV.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../7-5-2020 PyAutoGUI/.idea/7-5-2020 PyAutoGUI.iml" filepath="$PROJECT_DIR$/../7-5-2020 PyAutoGUI/.idea/7-5-2020 PyAutoGUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Tutorial/8-1-2020_OpenCV_Docs/.idea/8-1-2020_OpenCV_Docs.iml" filepath="$PROJECT_DIR$/../../Tutorial/8-1-2020_OpenCV_Docs/.idea/8-1-2020_OpenCV_Docs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Automate_WorldOfTanksBlitz.iml" filepath="$PROJECT_DIR$/.idea/Automate_WorldOfTanksBlitz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Tutorial/Tech With Tim/TechWithTimOOP/.idea/Tutorial.iml" filepath="$PROJECT_DIR$/../../Tutorial/Tech With Tim/TechWithTimOOP/.idea/Tutorial.iml" />
+    </modules>
+  </component>
+</project>

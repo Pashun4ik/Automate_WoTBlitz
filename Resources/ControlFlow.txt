@@ -1,0 +1,45 @@
+How does the program work? This is the control flow:
+
+	Start(): 
+	- Called from the very start. It's purpose is to start blitz, call auto_menu(), and that's it.
+	-> auto_menu()
+
+	Auto_menu():
+	- Handles all the usual chores that come with the garage menu.
+	- Deals with 2D game objects.
+	- Specifically:
+		1. Closes News pop-ups.
+		2. Check store notification icon -> Check store sub-menu -> Open containers if available -> Return to garage menu.
+		3. Checks missions and reads them to decide which tank to use for battle.
+		4. Calls in_game().
+	-> in_game()
+
+	In_game():
+	- Handles all the videogaming stuff.
+	- Deals with both 2D and 3D game objects.
+	- Specifically:
+		1. Handles tank movement. -> auto_move()
+		2. Handles gun aiming. -> auto_aim()
+		3. Handles shooting.-> auto_shoot()
+		4. Calls auto_menu() after a battle. The cycle repeats over again.
+	
+
+	Tank behaviour:
+	- Handled by auto_move(), auto_aim(), and auto_shoot() all working together.  
+	- Specifically:
+		- Auto_move(): 
+			- deals with the map and the surrounding visual environment to control tank movement.
+			- Creates these data:
+			    - Visual data from environment.
+			    - Visual data from the mini-map.
+			- Receives outside info:
+				- (boolean) Enemy tank detection.
+        - Auto_aim()
+            - deals with enemy tank detection, the movement of the cursor and aiming without hitting tomatoes.
+            - should be able to focus on one tank when it has detected multiple.
+            - Creates these data:
+                - X and Y position of enemy tanks
+
+
+			
+

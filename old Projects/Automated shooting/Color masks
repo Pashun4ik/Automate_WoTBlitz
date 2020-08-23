@@ -1,0 +1,15 @@
+(Both bright and dark) Tomato:
+    h_min: 140
+    h_max: 179
+    s_min: 0
+    s_max: 255
+    v_min: 0
+    v_max: 255
+
+Green reticule:
+    h_min: 46
+    h_max: 53
+    s_min: 177
+    s_max: 255
+    v_min: 0
+    v_max: 255

@@ -1,0 +1,61 @@
+We are going to use:
+    - PyAutoGUI -> To actually do the playing.
+    - mss -> To capture video data fast.
+    - OpenCV -> For computer vision.
+    - pytesseract -> For reading off of the reload counter.
+    - pynput -> For mouse event listeners.
+    - subprocess -> For firing up and shutting down Blitz.
+    - ctypes/wintypes -> For simulating keyboard/mouse inputs.
+    - random -> Randomize decisions.
+
+We need to:
+    - Filter particular colors on the screen:
+        - Map player icon.
+        - Menu/Store -> Container notification
+        - Keys on the On-Screen keyboard.
+    - Automate:
+        - Menu item selection and button execution.
+            - Store container icons
+            - Before and after battle menu
+        - Tank movement:
+            - Player icon on map must be isolated.
+            - On-Screen Keyboard must be utilized by mouse.
+        - Tank shooting:
+            - OpenCV for detecting enemy health bars and other GUI
+
+Shooting mechanism:
+    How does the automated shooting work? Basically, the program is checking these boolean values:
+        1. Reloaded? Check
+        2. No bright tomatoes within the shooting area? Check
+        3. No dark tomatoes within the shooting area? Check
+        4. Aiming reticule aimed? Check
+    When all of these are True, then the gun will fire.
+
+Aiming mechanism:
+    How does the program aim? Use these properties:
+        Program uses CV:
+        1. Enemy tanks with respect to the gun.
+        Then aim:
+        2. Tomatoes with respect to the gun.
+    It's all up to the shooting mechanism at this point.
+
+Moving mechanism:
+    There're 2 ways to do this. We can use CV to:
+        - Recognize the map, and use the map information. -> Formalize strategies
+        - Understand the environment with respect to the player tank. -> Use tactics
+
+    If close-combat:
+        - Player tank moves back and forth.
+        - Player tank circles enemy tank.
+    Else:
+        - Stop and fire.
+
+Automated menu:
+    This is our sequence of events in the garage menu:
+        1. Check and click containers in the store.
+        2. Automate the process of going into battle. -> Call in_game functions after auto-battle.
+        3. (Optional) Check missions and pick tanks.
+
+Automate start up:
+    1. Launch Blitz
+    2. Call automated menu.

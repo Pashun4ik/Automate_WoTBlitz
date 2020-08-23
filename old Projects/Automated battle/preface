@@ -1,0 +1,16 @@
+End goal: Automate the battle
+Test map: "Copperfield"
+
+Version 1.0
+    1. Enemy killing <- Enemy shooting <- Enemy aiming <- Enemy detection
+    2. Success <- navigate in-game <- avoid obstacles, go to way-points <- virtual keyboard
+
+    Values:
+    -  auto_aimed?
+    - detected_tank?
+
+    Control flow:
+    - Player moves straight if not blocked
+    - (!detected_tank !auto_aimed) Player looks straight while moving straight
+    - (!detected_tank !auto_aimed) Player looks left and right after some time
+    - Player tracks enemy GUI
