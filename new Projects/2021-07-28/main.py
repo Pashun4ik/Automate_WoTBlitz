@@ -2,10 +2,10 @@
 Automate WoTBlitz is a computer vision program that plays World of Tanks Blitz.
 It takes in screen video-input and outputs mouse and keyboard controls.
 
-The main files executes core, which then runs program applications. These
-applications execute implementations to fulfill their desired functions.
+main.py executes core.py, which then runs program applications. These
+applications execute implementations existing in a separate directory to fulfill their desired functions.
 
-For now, it scans the left monitor of the computer.
+For now, it scans the left monitor of the computer. In the future, running the CLI will provide the user with numerous options.
 
 TODO (✓):
     - Blitz Image segmentation
